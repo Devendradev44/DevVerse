@@ -11,7 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { AIModelsOption } from '@/public/Shared'
+import { AIModelsOption } from '@/services/Shared'
 
 const ChatInputBox = () => {
   return (
@@ -36,10 +36,10 @@ const ChatInputBox = () => {
                 <div className='flex items-center gap-4 '> 
                     
                     <DropdownMenu>
-                        <DropdownMenuTrigger>
+                        <DropdownMenuTrigger asChild>
                             <Button variant='ghost'>
                     <Cpu className="text-gray-500 h-5 w-5"/>
-                    </Button>
+                            </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent>
                             {/* <DropdownMenuLabel>My Account</DropdownMenuLabel>
