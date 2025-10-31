@@ -1,11 +1,11 @@
 "use client"
-import {Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar'
+import {Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '../../components/ui/sidebar'
 import React from 'react'
 import Image from 'next/image'
 import { Compass, GalleryHorizontalEnd, Ghost, LogIn, Search } from 'lucide-react'
 import { usePathname } from 'next/navigation'
-import { Button } from '@/components/ui/button'
-import { SignUpButton, UserButton } from '@clerk/nextjs'
+import { Button } from '../../components/ui/button'
+import { SignOutButton, SignUpButton, UserButton, useUser } from '@clerk/nextjs'
 
 const MenuOptions=[
     {
@@ -32,6 +32,7 @@ const MenuOptions=[
 
 function AppSidebar() {
     const path=usePathname();
+    const { user } = useUser();
   return (
     <div>
         
@@ -41,7 +42,7 @@ function AppSidebar() {
       </SidebarHeader>
       <SidebarContent className="bg-accent">
         <SidebarGroup>
-            <SidebarContent >
+            
                 <SidebarMenu>
                     {MenuOptions.map((menu,index)=>(
                         <SidebarMenuItem key={index}>
@@ -56,10 +57,13 @@ function AppSidebar() {
                     ))}
                 </SidebarMenu>
                     
-                <SignUpButton mode='modal'>
+                { !user ? <SignUpButton mode='modal'>
                     <Button className="rounded-full mx-4 mt-4">Sign Up</Button>
-                </SignUpButton>
-            </SidebarContent>
+                </SignUpButton>:
+                    <SignOutButton>
+                        <Button className="rounded-full mx-4 mt-4">Logout</Button>
+                    </SignOutButton> }
+            
         </SidebarGroup>
         <SidebarGroup />
       </SidebarContent>
