@@ -1,57 +1,52 @@
-🚀 DevVerse – Perplexity AI Clone (Frontend)
+🚀 DevVerse – AI Search Interface (UI Prototype)
 
-DevVerse is a modern AI search interface inspired by Perplexity AI, built using Next.js and modern UI principles.
-This project currently includes the complete frontend implementation.
+DevVerse is a frontend clone inspired by Perplexity AI, built using Next.js.
 
-✨ Features
+This project demonstrates:
 
-Modern AI-style chat interface
+Clean UI architecture
 
-Clean and responsive UI
+Component reusability
 
-Built with Next.js App Router
+State management
 
-Component-based architecture
+Modern responsive layout
 
-Optimized fonts using next/font
+Frontend-only AI interface simulation
 
-Fully responsive layout
+⚠️ Note: This is a UI prototype. Backend and AI integration are not included.
 
-🛠 Tech Stack
+🔧 Tech Stack
 
-Next.js
+Next.js (App Router)
 
 React
 
 JavaScript
 
-CSS / Tailwind (if used)
+Modern CSS
 
-Vercel (for deployment)
-
-🚀 Getting Started
-
-Run the development server:
-
+📦 Installation
 npm install
 npm run dev
 
+🎯 Purpose
 
-Open:
+This project was built to:
 
-http://localhost:3000
+Practice frontend system design
 
-📌 Project Status
+Improve Next.js architecture skills
 
-✅ Frontend Completed
-🚧 Backend Not Implemented (UI Prototype Only)
+Build real-world UI clones
 
-This project focuses on frontend architecture and UI design.
+🚀 Future Improvements
 
-📷 Preview
+Backend API integration
 
-(Add screenshot here if you want)
+AI response handling
 
-🌍 Deployment
+Authentication
 
-Deployed on Vercel.
+Chat history storage
+
