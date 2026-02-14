@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🚀 DevVerse – Perplexity AI Clone (Frontend)
 
-## Getting Started
+DevVerse is a modern AI search interface inspired by Perplexity AI, built using Next.js and modern UI principles.
+This project currently includes the complete frontend implementation.
 
-First, run the development server:
+✨ Features
 
-```bash
+Modern AI-style chat interface
+
+Clean and responsive UI
+
+Built with Next.js App Router
+
+Component-based architecture
+
+Optimized fonts using next/font
+
+Fully responsive layout
+
+🛠 Tech Stack
+
+Next.js
+
+React
+
+JavaScript
+
+CSS / Tailwind (if used)
+
+Vercel (for deployment)
+
+🚀 Getting Started
+
+Run the development server:
+
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Open:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
+📌 Project Status
 
-To learn more about Next.js, take a look at the following resources:
+✅ Frontend Completed
+🚧 Backend Not Implemented (UI Prototype Only)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project focuses on frontend architecture and UI design.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📷 Preview
 
-## Deploy on Vercel
+(Add screenshot here if you want)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🌍 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed on Vercel.
